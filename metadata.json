@@ -1,0 +1,6 @@
+{
+  "name": "Omni Evolution League",
+  "description": "Table tennis athlete metrics vault, tactical head-to-head comparison, and chronicle archive.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

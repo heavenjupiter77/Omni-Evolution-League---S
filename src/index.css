@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #030712;
+    color: #e2e8f0;
+    font-family: 'Rajdhani', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Orbitron', monospace, sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom Hollow Text Typography */
+.font-hollow {
+  color: transparent;
+  -webkit-text-stroke: 1.5px #00f0ff;
+  text-shadow: 0 0 12px rgba(0, 240, 255, 0.45);
+  letter-spacing: 0.08em;
+}
+
+.font-hollow-lg {
+  color: transparent;
+  -webkit-text-stroke: 2px #00f0ff;
+  text-shadow: 0 0 20px rgba(0, 240, 255, 0.6);
+  letter-spacing: 0.1em;
+}
+
+.font-hollow-amber {
+  color: transparent;
+  -webkit-text-stroke: 1.5px #f59e0b;
+  text-shadow: 0 0 15px rgba(245, 158, 11, 0.5);
+  letter-spacing: 0.08em;
+}
+
+.font-hollow-purple {
+  color: transparent;
+  -webkit-text-stroke: 1.5px #c084fc;
+  text-shadow: 0 0 15px rgba(192, 132, 252, 0.5);
+  letter-spacing: 0.08em;
+}
+
+.font-hollow-subtle {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(6, 182, 212, 0.65);
+}
+
+/* Neon Borders & Glows */
+.neon-border-cyan {
+  border: 1px solid rgba(6, 182, 212, 0.55);
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.22), inset 0 0 12px rgba(6, 182, 212, 0.06);
+}
+
+.neon-border-cyan-strong {
+  border: 1.5px solid #00f0ff;
+  box-shadow: 0 0 22px rgba(0, 240, 255, 0.45), inset 0 0 16px rgba(0, 240, 255, 0.12);
+}
+
+.neon-border-amber {
+  border: 1.5px solid rgba(245, 158, 11, 0.85);
+  box-shadow: 0 0 24px rgba(245, 158, 11, 0.35), inset 0 0 15px rgba(245, 158, 11, 0.08);
+}
+
+.neon-border-purple {
+  border: 1px solid rgba(168, 85, 247, 0.65);
+  box-shadow: 0 0 18px rgba(168, 85, 247, 0.3);
+}
+
+.neon-glow-text {
+  text-shadow: 0 0 10px rgba(6, 182, 212, 0.8);
+}
+
+/* Cyber grid background */
+.cyber-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(6, 182, 212, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(6, 182, 212, 0.05) 1px, transparent 1px);
+}
+
+/* Custom sleek scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0891b2 #020617;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #0891b2;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4;
+}
